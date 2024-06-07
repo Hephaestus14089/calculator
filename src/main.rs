@@ -1,7 +1,6 @@
 use std::env::args;
 
 fn main() {
-
     let mut args = args();
     // println!("{:?}", args);
 
@@ -17,7 +16,6 @@ fn main() {
 } // end of main()
 
 fn operate(operator: char, first_number: f32, second_number: f32) -> f32 {
-
     match operator {
         '+' => first_number + second_number,
         '-' => first_number - second_number,
@@ -28,6 +26,5 @@ fn operate(operator: char, first_number: f32, second_number: f32) -> f32 {
 } // end of operate function
 
 fn output(first_number: f32, second_number: f32, operator: char, result: f32) -> String {
-
     return format!("{} {} {} = {}", first_number, operator, second_number, result);
 } // end of output function
